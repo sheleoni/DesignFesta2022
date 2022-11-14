@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シェリーズワールド</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <section id="site-title">
+        <!-- Site Title -->
+        <h1 lang="ja">シェリーズワールド★オンラインストア
+            </p>
+            <h1 lang="en">Shellies' World
+                <h2 lang="en" id="subtitle">
+                    Featured Goods
+                </h2>
+                </p>
+
+                <p class="social-media-handle">
+                    <i class="fa-brands fa-instagram" alt="instagram account"></i>
+                    <a href="https://www.instagram.com/shellyy_jelly/" target="_blank">shellyy_jelly</a>
+                </p>
+
+                <!-- <button class="random-button">Surprise Me!</button> -->
+
+
+    </section>
+    <!-- Plus, show a random item -->
+    <section id="product-display">
+        <li class="product-card" v-for="(item, index) in products">
+            <p class="product-title">{{ products[index].name }}</p>
+            <p v-html="products[index].html" />
+        </li>
+
+    </section>
+
+
+</body>
+
+<!-- Vue 2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+<!-- Javascript -->
+<script src="script.js"></script>
+
+</html>

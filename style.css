@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@600&family=Kiwi+Maru&family=Mochiy+Pop+One&display=swap');
+
+:root {
+    --english-title: 'Atma', cursive;
+    --japanese-body: 'Mochiy Pop One', sans-serif;
+    --japanese-description: 'Kiwi Maru', serif;
+    --primary-text-color: black;
+
+    --secondary-background-color: beige;
+    font-family: 'Atma', cursive;
+    /* font-family: 'Kiwi Maru', serif; */
+    font-family: 'Mochiy Pop One', sans-serif;
+    background-color: var(--secondary-background-color);
+
+    margin: 5px;
+
+}
+
+body {
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100%;
+}
+
+#site-title {
+    text-align: center;
+}
+
+#site-title>h1,
+h2,
+p {
+    text-align: center;
+    margin-block: 0px;
+
+}
+
+#site-title>h1 {
+    text-align: center;
+    margin-block-end: -20px;
+
+}
+
+#site-title>h1:lang(ja) {
+    text-align: center;
+    margin-block-start: 20px;
+
+}
+
+#site-title>p:lang(ja) {
+    color: red;
+    text-transform: lowercase;
+}
+
+#site-title>:lang(en) {
+    font-family: var(--english-title);
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+#site-title>.random-button {
+    font-size: 2.75rem;
+    border-radius: 10px;
+}
+
+#site-title>h2:lang(en) {
+    font-family: var(--english-title);
+    color: var(--secondary-background-color);
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+#site-title>.social-media-handle {
+    font-size: 1.2rem;
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-background-color);
+    color: beige;
+}
+
+a:visited {
+    text-decoration: none;
+    /* color: var(--primary-text-color); */
+}
+
+#navigation {
+    font-size: 4rem;
+}
+
+#product-display {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    margin-block-end: 0px;
+    text-align: center;
+}
+
+.suzuri-widget-product-wrap .suzuri-widget-product-image img {
+    border-radius: 40px;
+    border: 5px solid black;
+}
